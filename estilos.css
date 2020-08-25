@@ -1,0 +1,115 @@
+/*GENERALES*/
+img {
+    max-width: 100%;
+}
+
+.index {
+    background-image: url(/imagenes-feria/frutas.jpg), url(/imagenes-feria/espinosa.jpg), url(/imagenes-feria/alocasia.jpg);
+    background-repeat: no-repeat;
+    background-position: center top, left top, right top;
+    background-size: 33%, 33%, 33%;
+    background-color: #EADDA6;
+}
+
+h1 {
+    font-family: 'Tangerine', cursive;
+    font-size: 110px;
+    margin-left: 10%;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    color: rgb(3, 0, 0);
+}
+
+h2 {
+    font-family: 'Italianno', cursive;
+    font-size: 50px;
+    margin-top: 120px;
+    color: black;
+}
+
+h3 {
+    font-family: 'Italianno', cursive;
+    font-size: 48px;
+    text-align: end;
+    margin-top: 0px;
+    color: black;
+}
+
+.por {
+    display: none;
+    background-image: url(/imagenes-feria/imageonline-co-transparentimage.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 1100px;
+}
+
+.porque:hover+.por {
+    display: block;
+}
+
+li {
+    font-family: 'Italianno', cursive;
+    font-size: 26px;
+    color: white;
+    margin-left: 28%;
+    margin-top: -12px;
+}
+
+/*TIENDA*/
+.contenedor-tienda {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-tienda {
+    text-align: center;
+    background-color: #9e2a2b;
+    background-image: url(botanica/2.jpg);
+    background-size: 564px 797px;
+    background-repeat: repeat-x;
+    background-repeat: round space;
+
+}
+
+.body-tienda {
+    background-color: #9e2a2b;
+}
+
+.nuestra-tienda {
+    text-align: center;
+    font-family: 'Tangerine', cursive;
+    font-size: 55px;
+    font-weight: bolder;
+    position: absolute;
+    left: 35%;
+    right: 35%;
+    margin-top: -120px;
+}
+li img {
+    width:200px;
+    height:200px;
+}
+.ropa li {
+    list-style: none;
+    margin: auto;
+}
+li p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+li a {
+    font-family: sans-serif;
+}
+.ropa li {
+    flex: 30%;
+    height: auto;
+    text-align: center;
+}
+.ropa {
+    padding: 0;
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+}
