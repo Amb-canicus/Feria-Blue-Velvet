@@ -63,7 +63,6 @@ li {
 
 .hero-tienda {
     text-align: center;
-    background-color: #9e2a2b;
     background-image: url(botanica/2.jpg);
     background-size: 564px 797px;
     background-repeat: repeat-x;
@@ -72,7 +71,7 @@ li {
 }
 
 .body-tienda {
-    background-color: #9e2a2b;
+    background-color: #ece1e1;
 }
 
 .nuestra-tienda {
@@ -85,25 +84,31 @@ li {
     right: 35%;
     margin-top: -120px;
 }
+
 li img {
-    width:200px;
-    height:200px;
+    width: 200px;
+    height: 200px;
 }
+
 .ropa li {
     list-style: none;
     margin: auto;
 }
+
 li p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 li a {
     font-family: sans-serif;
 }
+
 .ropa li {
     flex: 30%;
     height: auto;
     text-align: center;
 }
+
 .ropa {
     padding: 0;
     margin-top: 80px;
@@ -111,5 +116,5 @@ li a {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    
+
 }
