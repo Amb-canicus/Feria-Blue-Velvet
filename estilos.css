@@ -63,15 +63,15 @@ li {
 
 .hero-tienda {
     text-align: center;
-    background-image: url(botanica/2.jpg);
-    background-size: 564px 797px;
-    background-repeat: repeat-x;
-    background-repeat: round space;
+    background-image: url(botanica/4.jpg), url(botanica/3.jpg);
+    background-position: center right, center left;
+    background-size: 564px 797px;    
+    background-repeat: no-repeat;
 
 }
 
 .body-tienda {
-    background-color: #ece1e1;
+    background-color: #e78d06;
 }
 
 .nuestra-tienda {
