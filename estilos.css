@@ -2,7 +2,7 @@
 img {
     max-width: 100%;
 }
-
+/**INDEX**/
 .index {
     background-image: url(/imagenes-feria/frutas.jpg), url(/imagenes-feria/espinosa.jpg), url(/imagenes-feria/alocasia.jpg);
     background-repeat: no-repeat;
@@ -55,9 +55,21 @@ li {
     margin-top: -12px;
 }
 
+/*BOTON*/
+
+a img {
+    border-radius: 80%;
+    width: 160px;
+    
+    
+}
+header .boton-tienda {
+    display: flex;
+    justify-content: center;
+}
 /*TIENDA*/
 .contenedor-tienda {
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -71,7 +83,7 @@ li {
 }
 
 .body-tienda {
-    background-color: #e78d06;
+    background-color: #9061e7;  
 }
 
 .nuestra-tienda {
@@ -84,16 +96,18 @@ li {
     right: 35%;
     margin-top: -120px;
 }
-
+li {
+    
+   
+}
 li img {
-    width: 200px;
-    height: 200px;
+    width: 90%;
+    height: 400px;
+    border-radius: 50%;
+    border: 8px double #050505;
 }
 
-.ropa li {
-    list-style: none;
-    margin: auto;
-}
+
 
 li p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -104,9 +118,12 @@ li a {
 }
 
 .ropa li {
-    flex: 30%;
+    flex: 28%;
     height: auto;
     text-align: center;
+    list-style: none;
+    margin: 10px;
+    
 }
 
 .ropa {
@@ -114,7 +131,5 @@ li a {
     margin-top: 80px;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-
+    width: 100%;
 }
