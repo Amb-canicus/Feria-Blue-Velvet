@@ -86,7 +86,24 @@ header .boton-tienda {
         transform: rotate(360deg);
     }
 }
-
+/*TARJETAS*/
+.tarjetas {
+    background-color: rgba(241, 235, 237, 0.199);
+    border-radius: 10%;
+    padding-top: 10px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.tarjetas p {
+    color: black;
+}
+.tarjetas .numbertext {
+    color: black;
+    font-size: 25px;
+}
+.tarjetas .botones-compra {
+    color: black;
+    
+}
 /*SLIDE*/
 .slideshow-container {
     max-width: 1000px;
@@ -144,19 +161,27 @@ header .boton-tienda {
 .contenedor-tienda {
     max-width: 100%;
     margin: 0 auto;
+    background-image: url(imagenes-feria/bosque-rojo.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+.hero-tienda {
+    opacity: 0.9;
 }
 
 .hero-tienda {
     text-align: center;
     background-image: url(botanica/4.jpg), url(botanica/3.jpg);
     background-position: center right, center left;
-    background-size: 564px 797px;
+    background-size: 450px 700px;
     background-repeat: no-repeat;
 
 }
 
 .body-tienda {
-    background-color: #9061e7;
+    background: rgb(36,27,0);
+    background: linear-gradient(138deg, rgba(36,27,0,1) 0%, rgba(205,8,29,0.4962184702982756) 71%, rgba(176,0,19,0.4962184702982756) 98%);  
 }
 
 .nuestra-tienda {
