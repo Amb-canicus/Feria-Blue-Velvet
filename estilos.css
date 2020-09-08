@@ -87,7 +87,13 @@ header .boton-tienda {
     }
 }
 /*BOTON-COMPRAR*/
-.box-3 { display: flex;
+.botones-compra {
+    text-decoration: none;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 300;
+}
+.box-3 { 
+    display: flex;
     justify-content: center;
 }
 
@@ -169,15 +175,17 @@ header .boton-tienda {
 }
 .flipper {
     margin: 0 auto;
-    font-family: 'Libre Baskerville';
-    font-size: 20px;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 300;
+    font-size: 22px;
     color: rgb(252, 248, 247);
     
     
 }
 .flipper1 {
     margin: 0 auto;
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 300;
     font-size: 22px;
     color: blanchedalmond;
 }
@@ -214,21 +222,24 @@ header .boton-tienda {
     backface-visibility: hidden;
     display: flex;
     align-items: center;
+    
   }
   
   /* Style the front side */
   .flip-box-front { 
-    background: url(imagenes-feria/musgo2.jpg);
-    opacity: 0.8;
-    border-radius: 10%;
+    background: url(imagenes-feria/musgo3.jpg);
+    
+    border-radius: 15%;
     height: 50px;
     margin-top: 20px;
+    margin-left: 52px;
+   width: 250px;
   }
   
   /* Style the back side */
   .flip-box-back {
     background: url(imagenes-feria/musgo3.jpg);
-    border-radius: 10%;
+    border-radius: 15%;
     height: 100px;
     transform: rotateY(180deg);
   }
@@ -251,9 +262,9 @@ header .boton-tienda {
     width: auto;
     margin-top: -22px;
     padding: 16px;
-    color: white;
+    color: rgb(5, 0, 0);
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
@@ -365,9 +376,29 @@ li a {
 }
 /*FOOTER*/
 footer{
-    background-image: url(/footerferia/luna.jpg), url(/footerferia/luna.jpg);
+    background-image: url(footerferia/sincara.jpg);
+    background-position:center;
     background-repeat: no-repeat;
-    
+    text-align: center;
+    background-size: 300px;
+    height: 380px;
+    width: 300px;
+    border-style: dashed;
+    -webkit-box-shadow: 25px 25px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 25px 25px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 25px 25px 10px 0px rgba(0,0,0,0.75);
+    background-url: http://api.thumbr.it/whitenoise-361x370.png?background=2dbaedff&noise=f50e0e&density=37&opacity=69 
+}
+footer p {
+    line-height: 200px;
+    margin-left: -40px;
+    height: 100px;
+    font-family: 'Inconsolata', monospace;
+    font-weight: bold;
+}
+.centrar-footer {
+    display: flex;
+    justify-content: center;
 }
 /*SEARCH*/
 form{
