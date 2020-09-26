@@ -1,10 +1,15 @@
 /*GENERALES*/
+
 img {
     max-width: 100%;
 }
-* {box-sizing:border-box}
+
+* {
+    box-sizing: border-box
+}
 
 /**INDEX**/
+
 .index {
     background-image: url(/imagenes-feria/frutas.jpg), url(/imagenes-feria/espinosa.jpg), url(/imagenes-feria/alocasia.jpg);
     background-repeat: no-repeat;
@@ -69,7 +74,6 @@ a img {
     animation-duration: 5000ms;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-
 }
 
 header .boton-tienda {
@@ -81,107 +85,117 @@ header .boton-tienda {
     from {
         transform: rotate(0deg);
     }
-
     to {
         transform: rotate(360deg);
     }
 }
+
 /*BOTON-COMPRAR*/
+
 .botones-compra {
     text-decoration: none;
     font-family: 'Inconsolata', monospace;
     font-weight: 300;
 }
-.box-3 { 
+
+.box-3 {
     display: flex;
     justify-content: center;
 }
 
 .btn {
-	line-height: 40px;
-	height: 40px;
-	width: 80%;
+    line-height: 40px;
+    height: 40px;
+    width: 80%;
     cursor: pointer;
     margin-bottom: 8px;
-    
 }
+
 .btn-three {
-	color: #FFF;
-	transition: all 0.5s;
-	position: relative;
+    color: #FFF;
+    transition: all 0.5s;
+    position: relative;
 }
+
 .btn-three::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 1;
-	background-color: rgba(255,255,255,0.1);
-	transition: all 0.3s;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s;
 }
+
 .btn-three:hover::before {
-	opacity: 0 ;
-	transform: scale(0.5,0.5);
+    opacity: 0;
+    transform: scale(0.5, 0.5);
 }
+
 .btn-three::after {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 1;
-	opacity: 0;
-	transition: all 0.3s;
-	border: 1px solid rgba(255,255,255,0.5);
-	transform: scale(1.2,1.2);
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    transform: scale(1.2, 1.2);
 }
+
 .btn-three:hover::after {
-	opacity: 1;
-	transform: scale(1,1);
+    opacity: 1;
+    transform: scale(1, 1);
 }
 
 /*TARJETAS*/
+
 .contenedor-tienda {
     width: 1200px;
 }
+
 .tarjetas {
     background-color: rgba(241, 235, 237, 0.199);
     border-radius: 10%;
     padding-top: 40px;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
- 
+
 .tarjetas p {
     color: black;
     font-family: 'Old Standard TT', serif;
 }
+
 .tarjetas .numbertext {
     color: black;
     font-size: 25px;
 }
+
 .tarjetas .botones-compra {
     color: black;
-    
 }
 
 /*FLIP*/
+
 .centrar-flip {
     display: flex;
     justify-content: center;
     height: 110px;
 }
+
 .flipper {
     margin: 0 auto;
     font-family: 'Inconsolata', monospace;
     font-weight: 300;
     font-size: 22px;
     color: rgb(252, 248, 247);
-    
-    
 }
+
 .flipper1 {
     margin: 0 auto;
     font-family: 'Inconsolata', monospace;
@@ -194,68 +208,73 @@ header .boton-tienda {
     background-color: transparent;
     width: 350px;
     height: 150px;
-    perspective: 500px; 
+    perspective: 500px;
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%, 0% 50%);
-  }
-  
-  /* This container is needed to position the front and back side */
-  .flip-box-inner {
+}
+
+/* This container is needed to position the front and back side */
+
+.flip-box-inner {
     position: relative;
     width: 100%;
     height: 100%;
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
-  }
-  
-  /* Do an horizontal flip when you move the mouse over the flip box container */
-  .flip-box:hover .flip-box-inner {
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+
+.flip-box:hover .flip-box-inner {
     transform: rotateY(180deg);
-  }
-  
-  /* Position the front and back side */
-  .flip-box-front, .flip-box-back {
+}
+
+/* Position the front and back side */
+
+.flip-box-front, .flip-box-back {
     position: absolute;
     width: 100%;
     height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
+    -webkit-backface-visibility: hidden;
+    /* Safari */
     backface-visibility: hidden;
     display: flex;
     align-items: center;
-    
-  }
-  
-  /* Style the front side */
-  .flip-box-front { 
+}
+
+/* Style the front side */
+
+.flip-box-front {
     background: url(imagenes-feria/musgo3.jpg);
-    
     border-radius: 15%;
     height: 50px;
     margin-top: 20px;
     margin-left: 52px;
-   width: 250px;
-  }
-  
-  /* Style the back side */
-  .flip-box-back {
+    width: 250px;
+}
+
+/* Style the back side */
+
+.flip-box-back {
     background: url(imagenes-feria/musgo3.jpg);
     border-radius: 15%;
     height: 100px;
     transform: rotateY(180deg);
-  }
-
+}
 
 /*SLIDE*/
+
 .slideshow-container {
     max-width: 1000px;
     position: relative;
     margin: auto;
-  }
-  .mySlides {
+}
+
+.mySlides {
     display: none;
-  }
-    
-  .prev, .next {
+}
+
+.prev, .next {
     cursor: pointer;
     position: relative;
     top: 50%;
@@ -268,48 +287,63 @@ header .boton-tienda {
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-  }
-  .next {
+}
+
+.next {
     right: 0;
     border-radius: 2px 0 0 2px;
-  }
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
-  .numbertext {
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
     color: #f2f2f2;
     font-size: 5px;
     position: relative;
     top: 0;
-  }
-  .fade {
+}
+
+.fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
     animation-duration: 1.5s;
-  }
-  
-  @-webkit-keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
-  
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
 /*TIENDA*/
+
 main {
     background-image: url(imagenes-feria/bosque-rojo.png);
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
 }
+
 .contenedor-tienda {
     max-width: 100%;
     margin: 0 auto;
-    
 }
+
 .hero-tienda {
     opacity: 0.9;
 }
@@ -321,12 +355,17 @@ main {
     background-position: center right, center left;
     background-size: 450px 700px;
     background-repeat: no-repeat;
+}
 
+.hero-tienda img {
+    margin-top: 90px;
 }
 
 .body-tienda {
-    background: rgb(36,27,0);
-    background: linear-gradient(180deg, rgba(36,27,0,1) 0%, rgba(255,0,27,0.4962184702982756) 2%, rgba(145,0,0,0.8743697308024773) 4%); 
+    background-image: url(imagenes-feria/bosque-rojo.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
 }
 
 .nuestra-tienda {
@@ -340,15 +379,12 @@ main {
     margin-top: -120px;
 }
 
-
 li img {
     width: 90%;
     height: 300px;
     border-radius: 50%;
     border: 8px double #050505;
 }
-
-
 
 li p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -364,7 +400,6 @@ li a {
     text-align: center;
     list-style: none;
     margin: 10px;
-
 }
 
 .ropa {
@@ -374,21 +409,105 @@ li a {
     flex-wrap: wrap;
     width: 100%;
 }
+
+/*TIENDA2*/
+
+.tienda2 {
+    background-image: url(imagenes-feria/bosque-azul.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.contenedor-tienda {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.hero-tienda {
+    opacity: 0.9;
+}
+
+.hero-tienda2 {
+    text-align: center;
+    background-image: url(botanica/8.jpg), url(botanica/10.jpg);
+    opacity: 0.9;
+    background-position: center right, center left;
+    background-size: 450px 700px;
+    background-repeat: no-repeat;
+}
+
+.hero-tienda2 img {
+    width: 564px;
+    height: 797px;
+    margin-top: 90px;
+}
+
+.body-tienda2 {
+    background-image: url(imagenes-feria/bosque-azul.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.nuestra-tienda {
+    text-align: center;
+    font-family: 'Tangerine', cursive;
+    font-size: 55px;
+    font-weight: bolder;
+    position: absolute;
+    left: 35%;
+    right: 35%;
+    margin-top: -120px;
+}
+
+li img {
+    width: 90%;
+    height: 300px;
+    border-radius: 50%;
+    border: 8px double #050505;
+}
+
+li p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+li a {
+    font-family: sans-serif;
+}
+
+.ropa li {
+    flex: 28%;
+    height: auto;
+    text-align: center;
+    list-style: none;
+    margin: 10px;
+}
+
+.ropa {
+    padding: 0;
+    margin-top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
 /*FOOTER*/
-footer{
+
+footer {
     background-image: url(footerferia/sincara.jpg);
-    background-position:center;
+    background-position: center;
     background-repeat: no-repeat;
     text-align: center;
     background-size: 300px;
     height: 380px;
     width: 300px;
     border-style: dashed;
-    -webkit-box-shadow: 25px 25px 10px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 25px 25px 10px 0px rgba(0,0,0,0.75);
-    box-shadow: 25px 25px 10px 0px rgba(0,0,0,0.75);
-    background-url: http://api.thumbr.it/whitenoise-361x370.png?background=2dbaedff&noise=f50e0e&density=37&opacity=69 
+    -webkit-box-shadow: 25px 25px 10px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 25px 25px 10px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 25px 25px 10px 0px rgba(0, 0, 0, 0.75);
 }
+
 footer p {
     line-height: 200px;
     margin-left: -40px;
@@ -396,16 +515,18 @@ footer p {
     font-family: 'Inconsolata', monospace;
     font-weight: bold;
 }
+
 .centrar-footer {
     display: flex;
     justify-content: center;
 }
+
 /*SEARCH*/
-form{
+
+form {
     position: relative;
-    top: 50%;
-    left: 92%;
-    transform: translate(-50%,-50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
     transition: all 1s;
     width: 50px;
     height: 50px;
@@ -414,13 +535,15 @@ form{
     border-radius: 25px;
     border: 4px solid white;
     padding: 3px;
+    margin-top: 40px;
 }
 
-input{
+input {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;;
+    width: 100%;
+    ;
     height: 42.5px;
     line-height: 30px;
     outline: 0;
@@ -431,7 +554,7 @@ input{
     padding: 0 20px;
 }
 
-.fa{
+.fa {
     box-sizing: border-box;
     padding: 10px;
     width: 42.5px;
@@ -446,16 +569,16 @@ input{
     transition: all 1s;
 }
 
-form:hover{
+form:hover {
     width: 200px;
     cursor: pointer;
 }
 
-form:hover input{
+form:hover input {
     display: block;
 }
 
-form:hover .fa{
+form:hover .fa {
     background: #07051a;
     color: white;
 }
