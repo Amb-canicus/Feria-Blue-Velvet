@@ -1,4 +1,5 @@
 var slideIndex = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
+var slideIndex1 = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
 /* Class the members of each slideshow group with different CSS classes */
 var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5", "mySlides6", "mySlides7", "mySlides8",
  "mySlides9", "mySlides10", "mySlides11", "mySlides12", "mySlides13", "mySlides14", "mySlides15", "mySlides16",
@@ -33,9 +34,9 @@ showSlides(1, 24);
 showSlides(1, 25);
 showSlides(1, 26);
 showSlides(1, 27);
-showSlides(1, 28);
-showSlides(1, 29);
-showSlides(1, 30);
+showSlides1(1, 28);
+showSlides1(1, 29);
+showSlides1(1, 30);
 showSlides(1, 31);
 showSlides(1, 32);
 showSlides(1, 33);
@@ -55,9 +56,28 @@ function showSlides(n, no) {
   if (n < 1) { slideIndex[no] = x.length }
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
-  }
-  x[slideIndex[no] - 1].style.display = "block";
+  } 
+  x[slideIndex[no] - 1].style.display = "block"; 
 }
+/**slide tienda 2 */
+
+
+function plusSlides1(n, no) {
+  showSlides1(slideIndex1[no] += n, no);
+}
+
+function showSlides1(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) { slideIndex1[no] = 1 }
+  if (n < 1) { slideIndex1[no] = x.length }
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex1[no] - 1].style.display = "block";
+}
+
+/*otro*/
 
 document.getElementById('frente').style.opacity = 1;
 
