@@ -503,8 +503,8 @@ footer {
     height: 380px;
     width: 300px;
     border-style: dashed;
-    -webkit-box-shadow: 25px 25px 10px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 25px 25px 10px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 25px 25px 10px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 25px 25px 10px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 25px 25px 10px 0px rgba(0, 0, 0, 0.75);
 }
 
